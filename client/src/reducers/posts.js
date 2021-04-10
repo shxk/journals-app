@@ -3,7 +3,6 @@ import { FETCH_ALL, CREATE, UPDATE, DELETE } from "../constants/actionTypes";
 const posts = (posts = [], action) => {
   switch (action.type) {
     case FETCH_ALL:
-      console.log("fetching");
       return action.payload;
     case CREATE:
       return [...posts, action.payload];
